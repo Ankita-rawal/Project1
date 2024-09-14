@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="Ie=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    
+  </head>
+  
+  <body>
+   <header>   
+    <nav>
+      <div class="nav-left">
+        <img src="Images/logo.png" alt="Logo" class="logo" />
+        <ul>
+          <li><img src="Images/notification.png" alt="Notify" /></li>
+          <li><img src="Images/inbox.png" alt="inbox" /></li>
+          <li><img src="Images/video.png" alt="video" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="Images/search.png" alt="search" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+          <img src="Images/aprofile.png" alt="Profile-pic" />
+        </div>
+      </div>
+      <!---------- Setting Menu  --------------->
+      <div class="setting-menu">
+
+
+        <div id="darkbtn">
+          <span></span>
+        </div>
+
+       <div class="setting-menu-inner">
+
+         <div class="user-profile">
+           <img src="Images/aprofile.png" alt="" id="id-user-profile">
+           <div>
+             <p> Ankita</p>
+             <a href="#"> &nbsp;See Your Profile</a>
+           </div>
+         </div>
+         <hr>
+         <div class="user-profile">
+           <img src="Images/feedback.png" alt="" id="id-user-profile">
+           <div>
+             <p> Give Feedback</p>
+             <a href="#"> &nbsp; Help us to improve our content </a>
+           </div>
+         </div>
+         <hr>
+
+         <div class="setting-links">
+          <img src="Images/setting.png" alt="" class="setting-icon">
+          <a href="#">Setting & Privacy <img src="Images/arrow.png" alt="" width="08px"></a> 
+         </div>
+         <div class="setting-links">
+          <img src="Images/help.png" alt="" class="setting-icon">
+          <a href="#">Help & Support <img src="Images/arrow.png" alt="" width="08px"></a> 
+         </div>
+         <div class="setting-links">
+          <img src="Images/display.png" alt="" class="setting-icon">
+          <a href="#">Display & Accessibility <img src="Images/arrow.png" alt="" width="08px"></a> 
+         </div>
+         <div class="setting-links">
+          <img src="Images/logout.png" alt="" class="setting-icon">
+          <a href="#">Logout <img src="Images/arrow.png" alt="" width="08px"></a> 
+         </div>
+
+
+
+       </div>
+
+      </div>
+
+    </nav>
+  </header>
+    <div class="content">
+      <!-- Left-sidebar -->
+      <div class="left-sidebar">
+        <div class="imp-links">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="Images/news.png" alt="Latest news" /> Latest NEWS
+          </a>
+          <a href="#"
+            ><img src="Images/friends.png" alt="Friends" />Friends</a
+          >
+          <a href="#">
+            <img src="Images/group.png" alt="Groups" /> Groups
+          </a>
+          <a href="#">
+            <img src="Images/marketplace.png" alt="Marketplace" />
+            Marketplace
+          </a>
+          <a href="#"
+            ><img src="Images/watch.png" alt="" srcset="" />Watch</a
+          >
+          <a href="#">See More</a>
+        </div>
+        <div class="shortcut-links">
+          <p>Your Shortcuts</p>
+          <a href="#"
+            ><img src="Images/shortcut-1.png" alt="shortcut1" />Web
+            Devoloper</a
+          >
+          <a href="#"><img src="Images/shortcut-2.png" alt="sh2" /> Web Design </a>
+          <a href="#"><img src="Images/shortcut-3.png" alt="shot3" />Full Stack Development </a>
+          <a href="#"><img src="Images/shortcut-4.png" alt="shot4" /> Website Expert</a>
+        </div>
+      </div>
+      <!-- main-content -->
+      <div class="main-content">
+
+
+        <div class="story-gall">
+            <div class="story ss1">
+               <img src="Images/upload.png" alt="#">
+               <p>Post Story</p>
+            </div>
+            <div class="story ss2">
+              <img src="Images/aicon2.jpg" alt="#">
+              <p>Muskan</p>
+           </div>
+           <div class="story ss3">
+            <img src="Images/aicon3.jpg" alt="#">
+            <p>Shubu</p>
+         </div>
+         <div class="story ss4">
+          <img src="Images/aicon4.jpg" alt="#">
+          <p>Manat</p>
+       </div>
+       <div class="story ss5">
+        <img src="Images/Robin-icon.jpg" alt="#">
+        <p>Shruti</p>
+     </div>
+        </div>
+
+        <div class="right-post-container">
+            <div class="user-profile">
+              <img src="Images/aprofile.png" alt="" id="id-user-profile">
+              <div>
+                <p>Ankita</p>
+                <small id="public">Public &nbsp;<img src="Images/down-arrow.svg" alt="" class="rpc-icon"></small>
+              </div>
+            </div>
+
+            <div class="post-input-container">
+              <textarea rows="3" placeholder="What's in your mind Luffy" id="textar"></textarea>
+            </div>
+            <div class="add-post-links">
+              <a href="#"><img src="Images/video.svg" alt="" id="video">Live Video</a>
+              <a href="#"><img src="Images/photo.png" alt="">Photo/Video</a>
+              <a href="#"><img src="Images/feeling.png" alt="">Live Video</a>
+            </div>
+
+        </div>
+        
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="Images/aprofile.png" alt="" id="id-user-profile">
+              <div>
+                <p> Ankita </p>
+                <span>Nov. 15 2020, 01:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><img src="Images/dots-menu.png" alt="" id="rpc-icon2"></a>
+          </div>
+          <p class="post-text"> Lorem ipsum dolor, sit <span> amet consectetur</span> adipisicing elit. Cupiditate ex cumque vero quaerat eligendi labore! <a href="#" target="_blank" rel="noopener noreferrer">#easylife</a> <a href="#" target="_blank" rel="noopener noreferrer">#YouTube</a></p>
+          <img src="Images/apost1.png" alt="feed-image-1" class="postimg">
+          <div class="post-row">
+            <div class="activity-icon">
+              <div><img src="Images/like-blue.png" alt="like">14k</div>
+              <div><img src="Images/comments.png" alt="like">6k</div>
+              <div><img src="Images/share.png" alt="like">2k</div>
+            </div>
+            <div class="post-profile-icon">  
+              <img src="Images/aprofile.png" alt=""><img src="Images/down-arrow.svg" alt="" class="rpc-icon">
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="Images/aicon2.jpg" alt="" id="id-user-profile" >
+              <div>
+                <p>Muskan <img src="Images/heart.png" alt="" height="15px" width="15px"></p>
+                <span>Nov. 22 2020, 04:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><img src="Images/dots-menu.png" alt="" id="rpc-icon2"></a>
+          </div>
+          <p class="post-text"> <span> <b> Har Har Mahadev</b></span> <a href="#" target="_blank" rel="noopener noreferrer">#harharmahadev</a> <a href="#" target="_blank" rel="noopener noreferrer">#YouTube</a></p>
+          <img src="Images/apost2.png" alt="feed-image-1" class="postimg">
+          <div class="post-row">
+            <div class="activity-icon">
+              <div><img src="Images/like-blue.png" alt="like">10k</div>
+              <div><img src="Images/comments.png" alt="like">3k</div>
+              <div><img src="Images/share.png" alt="like">1009</div>
+            </div>
+            <div class="post-profile-icon">  
+              <img src="Images/aicon2.jpg" alt=""><img src="Images/down-arrow.svg" alt="" class="rpc-icon">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="Images/aicon3.jpg" alt="" id="id-user-profile">
+              <div>
+                <p>Shubu</p>
+                <span>Dec. 08 2020, 10:30 am</span>
+              </div>
+            </div>
+            <a href="#"><img src="Images/dots-menu.png" alt="" id="rpc-icon2"></a>
+          </div>
+          <p class="post-text"> Lorem ipsum dolor, sit <span> amet consectetur</span> adipisicing elit. Cupiditate ex cumque vero quaerat eligendi labore! <a href="#" target="_blank" rel="noopener noreferrer">#nami-san</a> <a href="#" target="_blank" rel="noopener noreferrer">#robin-chan</a></p>
+          <img src="Images/apost3.png" alt="feed-image-1" class="postimg">
+          <div class="post-row">
+            <div class="activity-icon">
+              <div><img src="Images/like-blue.png" alt="like">86k</div>
+              <div><img src="Images/comments.png" alt="like">22k</div>
+              <div><img src="Images/share.png" alt="like">86k</div>
+            </div>
+            <div class="post-profile-icon">  
+              <img src="Images/aicon3.jpg" alt=""><img src="Images/down-arrow.svg" alt="" class="rpc-icon">
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="Images/aicon4.jpg" alt="" id="id-user-profile">
+              <div>
+                <p>Manat</p>
+                <span>Dec. 12 2020, 08:40 am</span>
+              </div>
+            </div>
+            <a href="#"><img src="Images/dots-menu.png" alt="" id="rpc-icon2"></a>
+          </div>
+          <p class="post-text"> Lorem ipsum dolor, sit <span> amet consectetur</span> adipisicing elit. Cupiditate ex cumque vero quaerat eligendi labore! <a href="#" target="_blank" rel="noopener noreferrer">#easylife</a> <a href="#" target="_blank" rel="noopener noreferrer">#YouTube</a></p>
+          <img src="Images/apost6.png" alt="feed-image-1" class="postimg" height="790px" width="850px">
+          <div class="post-row">
+            <div class="activity-icon">
+              <div><img src="Images/like-blue.png" alt="like">86k</div>
+              <div><img src="Images/comments.png" alt="like">22k</div>
+              <div><img src="Images/share.png" alt="like">86k</div>
+            </div>
+            <div class="post-profile-icon">  
+              <img src="Images/aicon4.jpg" alt=""><img src="Images/down-arrow.svg" alt="" class="rpc-icon">
+            </div>
+          </div>
+        </div>
+        <button type="button" class="lode-more-button">Load More</button>
+      </div>
+
+      <!-- right-sidebar -->
+      <div class="right-sidebar">
+        
+        <div class="sidebar-title">
+          <h4>Events</h4>
+          <a href="#">See All</a>
+        </div>
+
+          <div class="event">
+            <div class="left-event">
+              <h3>8</h3>
+              <span>March</span>
+            </div>
+            <div class="right-event">
+              <h4>Social Media</h4>
+              <p> <img src="Images/Locationn.svg" alt="location_on" class="location_on"> Mathura</p>
+              <a href="#">More InFo</a>
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="left-event">
+              <h3>25</h3>
+              <span>June</span>
+            </div>
+            <div class="right-event">
+              <h4>Tech Talk</h4>
+              <p><img src="Images/Locationn.svg" alt="location_on" class="location_on"> </span> Mathura</p>
+              <a href="#">More InFo</a>
+            </div>
+          </div>
+          <div class="sidebar-title">
+            <h4>Advertisement</h4>
+            <a href="#">See All</a>
+          </div>
+          <img src="Images/Adds.jpg" alt="advertisement" class="sidebar-ad">
+          <div class="sidebar-title">
+            <h4>Conversation</h4>
+            <a href="#">Hide Chat</a>
+          </div>
+          
+          <div class="online-list">
+             <div class="online">
+             <img src="Images/aicon4.jpg" alt="">
+             </div>
+            <p>Manat</p>
+          </div>
+
+          <div class="online-list">
+            <div class="online">
+             <img src="Images/aicon2.jpg" alt="" height="40px">
+            </div>
+            <p>Muskan <img src="Images/heart.png" alt="" height="15px" width="15px"></p>
+         </div>
+
+         <div class="online-list">
+          <div class="online">
+           <img src="Images/aicon3.jpg" alt="" width="20px" height="40px">
+          </div>
+          <p>Shubu</p>
+       </div>
+
+      </div>
+    </div>
+
+
+  <footer>
+   <p>&#169 Copyright 2024 - Vrindavan</p>
+  </footer>
+
+  <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
